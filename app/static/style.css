@@ -1,4 +1,5 @@
 body {
+
     background-color: #fff;
 }
 
@@ -45,20 +46,20 @@ button.choose-file-button {
   width: 200px;
   height: 40px;
   border-radius: 2px;
-  background-color: #ffffff;
-  border: solid 1px #7052CB;
+  background-color: #e5ce00;
+  border: solid 1px #e5ce00;
   font-size: 13px;
-  color: #7052CB;
+  color: #e5ce00;
 }
 
 button.analyze-button {
     width: 200px;
     height: 40px;
-    border: solid 1px #7052CB;
+    border: solid 1px #e5ce00;
     border-radius: 2px;
-    background-color: #7052CB;
+    background-color: #e5ce00;
     font-size: 13px;
-    color: #ffffff;
+    color: #e5ce00;
 }
 
 button:focus {outline:0;}

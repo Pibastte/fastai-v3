@@ -2,40 +2,51 @@
 <head>
     <meta charset='utf-8'>
     <link rel='stylesheet' href='../static/style.css'>
+    <link rel='stylesheet' href='../static/style1.css'>
     <script src='../static/client.js'></script>
 </head>
 <body>
 <div>
-    <div class='center'>
-        <div class='title'>Classify Bear Images 🐻</div>
-        <p>
-            Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
-            all three!
-        </p>
-        <div class='content'>
-            <div class='no-display'>
-                <input id='file-input'
-                       class='no-display'
-                       type='file'
-                       name='file'
-                       accept='image/*'
-                       onchange='showPicked(this)'>
+
+  <div class='center stars'>
+      <div class='twinkling'>
+        <div class='clouds'>
+          <div class="site">
+            <div class='title'>🚀 Classify Rocket Images 🚀</div>
+            <p>
+                Use images of <a class="link" href="https://www.google.com/search?q=ariane+5&safe=active&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjTlZP6l4LhAhXzgM4BHSmxA0AQ_AUIDigB&biw=952&bih=887">Ariane 5</a>,
+                <a class="link" href="https://www.google.com/search?safe=active&biw=952&bih=887&tbm=isch&sa=1&ei=15OKXM7fLsaYlwTi4IPYDQ&q=Falcon+9&oq=Falcon+9&gs_l=img.3..35i39l2j0l3j0i67j0l3j0i67.14658.17225..17626...1.0..0.91.529.9......1....1..gws-wiz-img.......0i5i30j0i8i30.fFeb8b9wHPI">Falcon 9</a>,
+                <a class="link" href="https://www.google.com/search?safe=active&biw=952&bih=887&tbm=isch&sa=1&ei=Y5OKXIHyK8S8aa_4t_AE&q=Saturn+V&oq=Saturn+V&gs_l=img.3..35i39l2j0l8.111727.114112..114850...0.0..0.74.445.8......1....1..gws-wiz-img.......0i67.6n6H0D0Ud7I">Saturn V</a>,
+                <a class="link" href="https://www.google.com/search?safe=active&biw=952&bih=887&tbm=isch&sa=1&ei=6pOKXJ2QD8Xsac72uKgE&q=Soyouz&oq=Soyouz&gs_l=img.3..35i39l2j0i30l8.9840.11165..11546...0.0..0.67.325.6......1....1..gws-wiz-img.......0i67j0.j7iZ0o-65Rw">Soyouz</a>
+                or <a class="link" href="https://www.google.com/search?safe=active&biw=952&bih=887&tbm=isch&sa=1&ei=9pOKXK_vIMOwabewi5AP&q=New+Shepard&oq=New+Shepard&gs_l=img.3..35i39l2j0l8.8916.12165..12460...3.0..0.214.859.13j0j1......1....1..gws-wiz-img.......0i67.CNqxfi-h-_U">New Shepard</a>
+            </p>
+            <div class='content'>
+                <div class='no-display'>
+                    <input id='file-input'
+                           class='no-display'
+                           type='file'
+                           name='file'
+                           accept='image/*'
+                           onchange='showPicked(this)'>
+                </div>
+                <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+                <div class='upload-label'>
+                    <label id='upload-label'>No file chosen</label>
+                </div>
+                <div>
+                    <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+                </div>
+                <div class='analyze'>
+                    <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+                </div>
+                <div class='result-label'>
+                    <label id='result-label'></label>
+                </div>
             </div>
-            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-            <div class='upload-label'>
-                <label id='upload-label'>No file chosen</label>
-            </div>
-            <div>
-                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-            </div>
-            <div class='analyze'>
-                <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-            </div>
-            <div class='result-label'>
-                <label id='result-label'></label>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
+  </div>
 </div>
 </body>
 </html>
