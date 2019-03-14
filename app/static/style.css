@@ -40,6 +40,7 @@ body {
     margin-top: 0.5em;
     padding: 10px;
     font-size: 13px;
+    color: #ffffff
 }
 
 button.choose-file-button {
@@ -49,7 +50,7 @@ button.choose-file-button {
   background-color: #e5ce00;
   border: solid 1px #e5ce00;
   font-size: 13px;
-  color: #e5ce00;
+  color: #1c1a5b;
 }
 
 button.analyze-button {
@@ -59,7 +60,7 @@ button.analyze-button {
     border-radius: 2px;
     background-color: #e5ce00;
     font-size: 13px;
-    color: #e5ce00;
+    color: #1c1a5b;
 }
 
 button:focus {outline:0;}
